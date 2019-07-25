@@ -8,4 +8,9 @@ class Order extends Model
 {
     protected $table = 'order';
     protected $fillable = ['client_id', 'gambar1', 'gambar2', 'gambar3', 'gambar4', 'gambar5', 'gambar6'];
+
+    public function client()
+    {
+        return $this->belongsTo(App\Client::class);
+    }
 }

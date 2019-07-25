@@ -21,6 +21,6 @@ class BuatController extends Controller
         $or->gambar5 = $request->gambar5;
         $or->gambar6 = $request->gambar6;
         $or->save();
-        // return redirect('undangan/buat');
+        return redirect('undangan/buat');
     }
 }

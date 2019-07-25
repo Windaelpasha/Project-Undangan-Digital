@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -9,22 +9,25 @@
                 </button>
             </div>
             <div class="modal-body">
-                <input type="text">
-                <input type="text">
+                <select name="" id="">
+                    <option value="">test</option>
+                    <option value="">test 1</option>
+                </select>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="submit" class="btn btn-primary" name="simpan">Save changes</button>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 @extends('layouts.admin')
 
 @section('content')
+
+<!-- Form Controls -->
 <form role="form" method="post" action="" enctype="multipart/form-data">
-    <!-- Form Controls -->
     {{@csrf_field()}}
     <div class="row">
         <div class="col-md-12 mb-4">
@@ -105,14 +108,13 @@
                             <input id="gambar6" name="gambar6" type="file" class="form-control-file" onchange="showR.call(this)">
                         </span>
                     </div>
-                    <input class=" btn btn-primary" type="button" name="simpan" value="Simpan" style="margin-left: 920px;" data-toggle="modal" data-target="#exampleModalLong">
-
+                    <input class=" btn btn-primary" type="submit" name="simpan" value="Simpan" style="margin-left: 920px;" data-toggle="modal" data-target="#exampleModalLong">
                 </div>
             </div>
         </div>
         <!-- End Form Controls -->
 </form>
-
+<br>
 
 
 <!-- PREVIEW -->

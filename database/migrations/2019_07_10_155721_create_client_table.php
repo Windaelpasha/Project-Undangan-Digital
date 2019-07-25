@@ -24,6 +24,7 @@ class CreateClientTable extends Migration
             //client
             $table->string('nama');
             $table->string('no_hp');
+            $table->string('status');
             $table->timestamps();
         });
     }

@@ -24,6 +24,7 @@ Route::get('/index', 'AdminController@index');
 Route::get('/undangan/pemesan', 'PemesanController@pemesan');
 Route::get('/undangan/pemesan', 'PemesanController@ok');
 Route::post('/undangan/pemesan', 'PemesanController@create');
+Route::post('/undangan/pemesan', 'PemesanController@tampil');
 //type tambah
 Route::get('/undangan/type', 'TypeController@tipe');
 Route::get('/undangan/type', 'TypeController@hasil');
@@ -36,5 +37,8 @@ Route::post('crud_type/{id}/update', 'TypeController@update');
 Route::get('crud_type/{id}/delete', 'TypeController@delete');
 
 // buat order
-Route::get('/undangan/buat', 'BuatController@buat');
-Route::post('/undangan/buat', 'BuatController@create');
+Route::get('undangan/buat', 'BuatController@buat');
+Route::post('undangan/buat', 'BuatController@create');
+
+// hapus pemesan
+// Route::get('/undangan/buat', 'PemesanController@masuk');

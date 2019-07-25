@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Client;
+use App\Type;
 use function PHPSTORM_META\type;
 
 class PemesanController extends Controller
@@ -16,7 +17,7 @@ class PemesanController extends Controller
     //         ->select('client.*', 'type.nama_type')
     //         ->get();
     //     return view('undangan.pemesan', ['data' => $join]);
-    // }
+    // } 
 
     public function pemesan()
     {
@@ -25,6 +26,7 @@ class PemesanController extends Controller
     public function create(Request $request)
     {
         $pemesan = new Client;
+        // $pemesan->type_id  = $request->type_id;
         $pemesan->nama = $request->Nama;
         $pemesan->no_hp = $request->No;
         $pemesan->save();
@@ -32,7 +34,10 @@ class PemesanController extends Controller
     }
     public function ok()
     {
-        $data = Client::all();
-        return view('undangan.pemesan', ['data_pemesan' => $data]);
+
+
+        $data = Client::where('status', '=', '0')->get();
+        // $type = Type::all();
+        return view('undangan.pemesan', compact('data'));
     }
 }
