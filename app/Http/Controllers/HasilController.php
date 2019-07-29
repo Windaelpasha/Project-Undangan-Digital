@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class HasilController extends Controller
 {
-    public function hasilpesanan()
+    public function hasil()
     {
-        return view('');
+        return view('pesanan.hasil.hasil');
     }
 }

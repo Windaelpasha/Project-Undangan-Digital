@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/landing', 'LandingController@landing')->name('landing');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/dashboard', 'DashboardController@dashboard')->name('dashboard');
@@ -26,3 +28,5 @@ Route::get('/buatpesanan', 'BaruController@buatPesanan')->name('buatpesanan');
 Route::get('/pesananselesai', 'SelesaiController@pesananselesai')->name('pesananselesai');
 
 Route::get('/report', 'ReportController@report')->name('report');
+
+Route::get('/hasil', 'HasilController@hasil')->name('hasil');

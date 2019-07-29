@@ -24,14 +24,13 @@
 		                <div class="card-body">
                             <img src="/pesanan/d.jpg" alt="" style="width:170px;height:180px;" class="mb-3">
                             <b><p class="text-primary" style="width=180px; text-align:center;">Aku & dia</p></b>
-                            <button type="button" class="btn btn-primary btn-pill" style="width:170px"; href="/hasil">
-		                        <i class="fa fa-eye mr-1"></i> <b>Lihat</b>
+                            <button type="button" class="btn btn-primary btn-pill" style="width:170px";>
+		                        <a href="/hasil" style="color: white";> <i class="fa fa-eye mr-1"></i> <b>Lihat</b></a>
 		                    </button>
 						</div>
 	                </div>
 			    </div>
         	</div>
-			</div>
 		</div>		
 	</div>
 </div>
