@@ -9,7 +9,9 @@ class TypeController extends Controller
 {
     public function tipe()
     {
-        return view('undangan/type');
+        $data_type = Type::all();
+
+        return view('undangan/type', compact('data_type'));
     }
     // tambah data undangan
     public function tambah()

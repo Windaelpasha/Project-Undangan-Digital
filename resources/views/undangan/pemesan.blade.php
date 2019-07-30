@@ -32,36 +32,40 @@
 								</span>
 							</span>
 						</div>
-						<!-- <div class="card-body">
+						@if($type != null)
+						<div class="card-body">
 							<div class="form-group mb-4">
 								<label for="inputRightIcon">Name</label>
 								<select name="type_id" id="type_id">
-								
+								@foreach($type as $typ)
+									<option value="{{$typ->id}}">{{$typ->nama_type}}</option>
+								@endforeach
 								</select>
-							</div> -->
-						<div class="form-group mb-4">
-							<label for="inputRightIcon">Name</label>
-							<span class="form-icon-wrapper">
-								<span class="form-icon form-icon--right">
-									<!-- <i class="fa fa-globe form-icon__item"></i> -->
+							</div>
+							@endif
+							<div class="form-group mb-4">
+								<label for="inputRightIcon">Name</label>
+								<span class="form-icon-wrapper">
+									<span class="form-icon form-icon--right">
+										<!-- <i class="fa fa-globe form-icon__item"></i> -->
+									</span>
+									<input id="Nama" name="Nama" class="form-control form-icon-input-right" type="text" placeholder="Input Name	">
 								</span>
-								<input id="Nama" name="Nama" class="form-control form-icon-input-right" type="text" placeholder="Input Name	">
-							</span>
-						</div>
-						<div class="form-group mb-4">
-							<label for="inputRightIcon">No HandPhone</label>
-							<span class="form-icon-wrapper">
-								<span class="form-icon form-icon--right">
-									<!-- <i class="fa fa-map-marker form-icon__item"></i> -->
+							</div>
+							<div class="form-group mb-4">
+								<label for="inputRightIcon">No HandPhone</label>
+								<span class="form-icon-wrapper">
+									<span class="form-icon form-icon--right">
+										<!-- <i class="fa fa-map-marker form-icon__item"></i> -->
+									</span>
+									<input id="No" name="No" class="form-control form-icon-input-right" type="text" placeholder="Input NoHandPhone">
 								</span>
-								<input id="No" name="No" class="form-control form-icon-input-right" type="text" placeholder="Input NoHandPhone">
-							</span>
+							</div>
+							<input class="btn btn-primary" type="submit" name="simpan" value="Simpan" style="margin-left: 820px;">
 						</div>
-						<input class="btn btn-primary" type="submit" name="simpan" value="Simpan" style="margin-left: 820px;">
 					</div>
 				</div>
-			</div>
-			<!-- End Form Controls -->
+				<!-- End Form Controls -->
 	</form>
 	<br>
 	<div class="container">

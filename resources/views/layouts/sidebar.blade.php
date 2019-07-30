@@ -40,7 +40,7 @@
 
 				<!-- Forms -->
 				<li class="u-sidebar-nav-menu__item">
-					<a class="u-sidebar-nav-menu__link" href="../undangan/pemesan">
+					<a class="u-sidebar-nav-menu__link" href="{{ route('undangan.pemesan') }}">
 						<i class="far fa-edit u-sidebar-nav-menu__item-icon"></i>
 						<span class="u-sidebar-nav-menu__item-title">Data Pemesan</span>
 					</a>

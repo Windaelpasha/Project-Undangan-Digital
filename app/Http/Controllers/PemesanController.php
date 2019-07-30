@@ -21,12 +21,14 @@ class PemesanController extends Controller
 
     public function pemesan()
     {
-        return view('undangan/pemesan');
+        $type = Type::all(); 
+        $data = Client::all();
+        return view('undangan/pemesan',compact('type','data'));
     }
     public function create(Request $request)
     {
         $pemesan = new Client;
-        // $pemesan->type_id  = $request->type_id;
+        $pemesan->type_id  = $request->type_id;
         $pemesan->nama = $request->Nama;
         $pemesan->no_hp = $request->No;
         $pemesan->save();
@@ -34,10 +36,17 @@ class PemesanController extends Controller
     }
     public function ok()
     {
-
-
         $data = Client::where('status', '=', '0')->get();
         // $type = Type::all();
         return view('undangan.pemesan', compact('data'));
+    }
+
+    public function type($type_id = null)
+    {
+        $type = null;
+        if (!$type_id) {
+            $type = Client::where('type_id', DB::type()->id)->get();
+        }
+        return view('undangan.pemesan', ['type_id'=>$type_id , 'type'=>$type]);
     }
 }
