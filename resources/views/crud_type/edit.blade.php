@@ -4,7 +4,7 @@
 <div class="u-body">
     <!-- End Breadcrumb -->
     <div class="mb-4">
-        <h1 class="h3">Tambah Type</h1>
+        <h1 class="h3">Tambah Tipe</h1>
         <nav aria-label="breadcrumb">
             <!-- <ol class="breadcrumb bg-transparent small p-0">
 				<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
@@ -14,7 +14,7 @@
     </div>
     <!-- End Breadcrumb -->
 
-    <form role="form" method="post" action="/crud_type/{{$Typee->id}}/update">
+    <form role="form" method="post" action="/crud_type/update/{{$Typee->id}}">
         <input type="hidden" name="id" value="{{$Typee->id}}">
         <!-- Form Controls -->
         {{@csrf_field()}}
@@ -22,11 +22,11 @@
             <div class="col-md-12 mb-4">
                 <div class="card">
                     <header class="card-header" style="border: px solid #6b15b6;color: #6b15b6;">
-                        <h2 class="h3 card-header-title text-center">Ubah Data Type </h2>
+                        <h2 class="h3 card-header-title text-center">Ubah Data Tipe </h2>
                     </header>
                     <div class="card-body">
                         <div class="form-group mb-4">
-                            <label for="inputRightIcon">Name Type</label>
+                            <label for="inputRightIcon">Nama Tipe</label>
                             <span class="form-icon-wrapper">
                                 <span class="form-icon form-icon--right">
                                     <!-- <i class="fa fa-globe form-icon__item"></i> -->
@@ -35,7 +35,7 @@
                             </span>
                         </div>
                         <div class="form-group mb-4">
-                            <label for="inputRightIcon">Jumlah slide</label>
+                            <label for="inputRightIcon">Jumlah Slide</label>
                             <span class="form-icon-wrapper">
                                 <span class="form-icon form-icon--right">
                                     <!-- <i class="fa fa-map-marker form-icon__item"></i> -->
