@@ -52,7 +52,7 @@
                                 <input id="harga" name="harga" class="form-control form-icon-input-right" type="text" value="{{$Typee->harga}}" placeholder>
                             </span>
                         </div>
-                        <input class="btn btn-primary" type="submit" name="edit" value="edit" style="margin-left: 920px;">
+                        <input class="btn btn-primary" type="submit" name="edit" value="edit" style="margin-left: 1100px;">
                     </div>
                 </div>
             </div>

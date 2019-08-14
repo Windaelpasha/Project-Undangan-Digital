@@ -17,6 +17,6 @@ class Client extends Model
 
     public function order()
     {
-        return $this->hasMany(Order::class,'id', 'client_id');
+        return $this->hasMany(Order::class,'client_id', 'id');
     }
 }

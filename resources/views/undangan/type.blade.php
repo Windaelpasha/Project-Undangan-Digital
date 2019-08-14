@@ -5,7 +5,7 @@
 <div class="u-body">
     <!-- End Breadcrumb -->
     <div class="mb-4">
-        <a href="../crud_type/tambah"><button class="btn btn-primary" style="margin-left: 20px;"><i class="fa fa-plus"></i> Tambah</button></a>
+        <a href="../crud_type/tambah"><button class="btn btn-primary" style="margin-left: 20px;"><i class="fa fa-plus"> Tambah</i></button></a>
         <nav aria-label="breadcrumb">
             <!-- <ol class="breadcrumb bg-transparent small p-0">
 				<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
@@ -37,9 +37,9 @@
                             <td>{{$type->jumlah_slide}}</td>
                             <td>{{$type->harga}}</td>
                             <td>
-                                <a href="/crud_type/edit/{{$type->id}}"><button class="btn btn-warning"><li class="fa fa-edit"></li></button></a>
+                                <a href="/crud_type/edit/{{$type->id}}"><button class="badge badge-success"><li class="fa fa-edit">Edit</li></button></a>
                                 |
-                                <a href="/crud_type/delete/{{$type->id}}" onclick="return confirm('apakah anda yakin');"><button class="btn btn-danger" ><i class="fa fa-trash"></i></button></a>
+                                <a href="/crud_type/delete/{{$type->id}}" onclick="return confirm('apakah anda yakin');"><button class="badge badge-danger" ><i class="fa fa-trash">Hapus</i></button></a>
                             </td>
                         </tr>
                         <?php $i++; ?>

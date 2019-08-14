@@ -27,7 +27,7 @@
 									<span class="form-icon form-icon--right">
 										<!-- <i class="fa fa-globe form-icon__item"></i> -->
 									</span>
-									<input id="Nama" name="Nama" class="form-control form-icon-input-right" type="text" placeholder="Masukan Nama Pemesan" require>
+									<input id="Nama" name="Nama" class="form-control form-icon-input-right" type="text" placeholder="Masukan Nama Pemesan" >
 								</span>
 							</div>
 							@if($type != null)
@@ -50,7 +50,8 @@
 									<input id="No" name="No" class="form-control form-icon-input-right" type="text" placeholder="Masukan Nomor Gawai">
 								</span>
 							</div>
-							<input class="btn btn-primary" type="submit" name="simpan" value="Simpan" style="margin-left: 870px;">
+							<button class="btn btn-primary" type="submit" name="simpan" style="margin-left: 1000px;"><li class="fa">Simpan</li></button>
+							
 						</div>
 					</div>
 				</div>
@@ -79,7 +80,9 @@
 							<td>{{$pemesan->nama}}</td>
 							<td>{{$pemesan->type['nama_type']}}</td>
 							<td>{{$pemesan->no_hp}}</td>
-							<td> <a href="/undangan/buat/{{$pemesan->id}}" class="btn btn-primary">Buat</a> </td>
+							<td> <a href="/undangan/buat/{{$pemesan->id}}" class="btn btn-primary"><li class="fa">Buat</li></a>
+							|
+							<a href="/undangan/pemesan/{{$pemesan->id}}" class="btn btn-danger" onclick="return confirm('apakah anda yakin untuk menghapus data tersebut!!')"><i class="fa fa-trash">Hapus</i></a> </td>
 						</tr>
 						<?php $i++; ?>
 						@endforeach

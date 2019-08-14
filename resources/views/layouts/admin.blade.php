@@ -94,6 +94,9 @@
 		<script src="/assets/js/dashboard-page-scripts.js"></script>
 		<script src="/assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
 		<script src="/assets/vendor/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+		@section('js')
+
+		@show
 		
 	</body>
 </html>
