@@ -22,8 +22,8 @@ class CreateClientTable extends Migration
                 ->on('type')
                 ->onDelete('cascade');
             //client
-            $table->string('nama');
-            $table->string('no_hp');
+            $table->string('nama')->nullable();
+            $table->string('no_hp')->nullable();
             $table->string('status');
             $table->timestamps();
         });

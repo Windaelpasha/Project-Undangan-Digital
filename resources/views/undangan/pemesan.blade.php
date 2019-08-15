@@ -80,9 +80,9 @@
 							<td>{{$pemesan->nama}}</td>
 							<td>{{$pemesan->type['nama_type']}}</td>
 							<td>{{$pemesan->no_hp}}</td>
-							<td> <a href="/undangan/buat/{{$pemesan->id}}" class="btn btn-primary"><li class="fa">Buat</li></a>
+							<td> <a href="/undangan/buat/{{$pemesan->id}}" class="btn btn-info"><li class="fa">Buat</li></a>
 							|
-							<a href="/undangan/pemesan/{{$pemesan->id}}" class="btn btn-danger" onclick="return confirm('apakah anda yakin untuk menghapus data tersebut!!')"><i class="fa fa-trash">Hapus</i></a> </td>
+							<a href="/undangan/pemesan/{{$pemesan->id}}" class="btn btn-danger" onclick="return confirm('apakah anda yakin untuk menghapus data ini!!')"><i class="fa fa-trash">Hapus</i></a> </td>
 						</tr>
 						<?php $i++; ?>
 						@endforeach

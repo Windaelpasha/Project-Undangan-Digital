@@ -22,12 +22,20 @@ class CreateOrderTable extends Migration
                 ->on('client')
                 ->onDelete('cascade');
 
-            $table->string('gambar1');
-            $table->string('gambar2');
-            $table->string('gambar3');
-            $table->string('gambar4');
-            $table->string('gambar5');
-            $table->string('gambar6');
+            $table->string('gambar1')->nullable();
+            $table->string('gambar2')->nullable();
+            $table->string('gambar3')->nullable();
+            $table->string('gambar4')->nullable();
+            $table->string('gambar5')->nullable();
+            $table->string('gambar6')->nullable();
+            //slide
+            $table->string('slide1')->nullable(); 
+            $table->string('slide2')->nullable(); 
+            $table->string('slide3')->nullable(); 
+            $table->string('slide4')->nullable(); 
+            $table->string('slide5')->nullable(); 
+            $table->string('slide6')->nullable(); 
+
 
             $table->timestamps();
         });

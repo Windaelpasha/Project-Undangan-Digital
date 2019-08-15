@@ -37,9 +37,9 @@
                             <td>{{$type->jumlah_slide}}</td>
                             <td>{{$type->harga}}</td>
                             <td>
-                                <a href="/crud_type/edit/{{$type->id}}"><button class="badge badge-success"><li class="fa fa-edit">Edit</li></button></a>
+                                <a href="/crud_type/edit/{{$type->id}}"><button class="btn btn-success"><li class="fa fa-edit">Edit</li></button></a>
                                 |
-                                <a href="/crud_type/delete/{{$type->id}}" onclick="return confirm('apakah anda yakin');"><button class="badge badge-danger" ><i class="fa fa-trash">Hapus</i></button></a>
+                                <a href="/crud_type/delete/{{$type->id}}" onclick="return confirm('apakah anda yakin');"><button class="btn btn-danger" ><i class="fa fa-trash">Hapus</i></button></a>
                             </td>
                         </tr>
                         <?php $i++; ?>
