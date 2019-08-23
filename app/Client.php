@@ -12,11 +12,11 @@ class Client extends Model
 
     public function type()
     {
-        return $this->belongsTo(Type::class, 'type_id','id');
+        return $this->belongsTo(Type::class, 'type_id', 'id');
     }
 
     public function order()
     {
-        return $this->hasMany(Order::class,'client_id', 'id');
+        return $this->hasMany(Order::class, 'client_id', 'id');
     }
 }

@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="/assets/vendor/datatables.net-bs/css/dataTables.bootstrap.min.css">
 
 		<!-- Components Vendor Styles -->
-	  <link rel="stylesheet" href="/assets/vendor/font-awesome/css/all.min.css">
+	    <link rel="stylesheet" href="/assets/vendor/font-awesome/css/all.min.css">
 		<link rel="stylesheet" href="/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
 
 		<!-- Theme Styles -->

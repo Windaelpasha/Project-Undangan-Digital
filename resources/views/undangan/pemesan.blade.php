@@ -27,14 +27,13 @@
 									<span class="form-icon form-icon--right">
 										<!-- <i class="fa fa-globe form-icon__item"></i> -->
 									</span>
-									<input id="Nama" name="Nama" class="form-control form-icon-input-right" type="text" placeholder="Masukan Nama Pemesan" >
+									<input id="Nama" name="Nama" class="form-control form-icon-input-right" type="text" placeholder="Masukan Nama Pemesan" required >
 								</span>
 							</div>
 							@if($type != null)
 							<div class="form-group mb-4">
 								<label for="inputRightIcon">Tipe</label>
 									<select name="type_id" id="type_id" class="custom-select">
-											<option selected> Pilih Tipe</option>
 										@foreach($type as $typ)
 											<option value="{{$typ->id}}">{{$typ->nama_type}}</option>
 										@endforeach
@@ -47,7 +46,7 @@
 									<span class="form-icon form-icon--right">
 										<!-- <i class="fa fa-map-marker form-icon__item"></i> -->
 									</span>
-									<input id="No" name="No" class="form-control form-icon-input-right" type="text" placeholder="Masukan Nomor Gawai">
+									<input id="No" name="No" class="form-control form-icon-input-right" type="text" placeholder="Masukan Nomor Gawai" required>
 								</span>
 							</div>
 							<button class="btn btn-primary" type="submit" name="simpan" style="margin-left: 1000px;"><li class="fa">Simpan</li></button>

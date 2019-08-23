@@ -1,1 +1,5 @@
 *.sqlite
+<<<<<<< HEAD
+=======
+*.sqlite-journal
+>>>>>>> origin/master

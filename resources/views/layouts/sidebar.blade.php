@@ -34,8 +34,6 @@
 							</a>
 						</li>
 					</ul>
-
-
 				</li>
 
 				<!-- Forms -->
@@ -61,7 +59,7 @@
 
 				<!-- Documentation -->
 				<li class="u-sidebar-nav-menu__item">
-					<a class="u-sidebar-nav-menu__link" href="./docs.html">
+					<a class="u-sidebar-nav-menu__link" href=" {{route('data.undangan')}}">
 						<i class="far fa-newspaper u-sidebar-nav-menu__item-icon"></i>
 						<span class="u-sidebar-nav-menu__item-title">Dokumentasi</span>
 					</a>

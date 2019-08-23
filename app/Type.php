@@ -11,6 +11,6 @@ class Type extends Model
 
     public function client()
     {
-        return $this->hasMany(Client::class, 'id','type_id');
+        return $this->hasMany(Client::class, 'id', 'type_id');
     }
 }
