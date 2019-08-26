@@ -17,7 +17,7 @@
 	<nav id="menu" class="navbar navbar-expand-lg navbar-dark" style="padding-top: 15px; transition-duration: 0.6s; box-shadow: 0 5px 12px -8px rgba(0, 0, 0,0.9); background-color: #3b556f; ">
       <a class="navbar-brand" href="#">Undangan Pernikahan Digital</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -31,14 +31,10 @@
           <li class="nav-item">
             <a class="nav-link navigasi" href="{{route ('login') }}">Masuk</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link navigasi" href="{{route ('register')}}">Daftar</a>
-          </li>
         </ul>
       </div>
     </nav>
-
-    <main role="main">
+   <main role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron" style="background: url('{{ asset('assets/img/alhamdulillah.jpg')}}'); background-size: cover; font-family: Arial; padding-top: 150px; padding-bottom: 100px;">

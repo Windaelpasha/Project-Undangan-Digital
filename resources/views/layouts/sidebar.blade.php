@@ -28,7 +28,7 @@
 
 					<ul id="subMenu3" class="u-sidebar-nav-menu u-sidebar-nav-menu--second-level" style="display: none;">
 						<li class="u-sidebar-nav-menu__item">
-							<a class="u-sidebar-nav-menu__link" href="../undangan/type">
+							<a class="u-sidebar-nav-menu__link" href="{{route('undangan.type')}}">
 								<span class="u-sidebar-nav-menu__item-icon">T</span>
 								<span class="u-sidebar-nav-menu__item-title">Type</span>
 							</a>
@@ -40,7 +40,7 @@
 
 				<!-- Forms -->
 				<li class="u-sidebar-nav-menu__item">
-					<a class="u-sidebar-nav-menu__link" href="../undangan/pemesan">
+					<a class="u-sidebar-nav-menu__link" href="{{ route('undangan.pemesan') }}">
 						<i class="far fa-edit u-sidebar-nav-menu__item-icon"></i>
 						<span class="u-sidebar-nav-menu__item-title">Data Pemesan</span>
 					</a>
@@ -48,12 +48,12 @@
 				<!-- End Forms -->
 
 				<!-- Tables -->
-				<li class="u-sidebar-nav-menu__item">
-					<a class="u-sidebar-nav-menu__link" href="../undangan/buat">
+				<!-- <li class="u-sidebar-nav-menu__item">
+					<a class="u-sidebar-nav-menu__link" href="{{route('undangan.create')}}">
 						<i class="far fa-list-alt u-sidebar-nav-menu__item-icon"></i>
 						<span class="u-sidebar-nav-menu__item-title">Pembuatan</span>
 					</a>
-				</li>
+				</li> -->
 				<!-- End Tables -->
 
 

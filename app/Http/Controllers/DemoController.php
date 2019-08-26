@@ -31,4 +31,10 @@ class DemoController extends Controller
     {
     	return view('/welcome');
     }
+    public function admin()
+    {
+        $masuk = User::all();
+
+        return view('auth/login', compact('login'));
+    }
 }

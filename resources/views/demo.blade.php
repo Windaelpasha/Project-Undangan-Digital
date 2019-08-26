@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
 </head>
 <body>
- <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top" style="padding-top: 15px; transition-duration: 0.6s; box-shadow: 0 5px 12px -8px rgba(0, 0, 0,0.9); background-color: #3b556f; ">
+<nav id="menu" class="navbar navbar-expand-lg navbar-dark" style="padding-top: 15px; transition-duration: 0.6s; box-shadow: 0 5px 12px -8px rgba(0, 0, 0,0.9); background-color: #3b556f; ">
       <a class="navbar-brand" href="#">Undangan Pernikahan Digital</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,17 +24,14 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link navigasi" href="{{ url ('welcome')}}">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navigasi" href="{{ url ('demo')}}">Demo</a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link navigasi" href="{{ route ('login')}}">Masuk</a>
+            <a class="nav-link navigasi" href="{{url ('welcome')}}">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navigasi" href="{{ route ('register')}}">Daftar</a>
+            <a class="nav-link navigasi" href="{{url('demo')}}">Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navigasi" href="{{ route('login')}}">Masuk</a>
           </li>
         </ul>
       </div>

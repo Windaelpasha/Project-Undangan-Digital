@@ -4,7 +4,7 @@
 <div class="u-body">
     <!-- End Breadcrumb -->
     <div class="mb-4">
-        <h1 class="h3">Tambah Type</h1>
+        <h1 class="h3">Tambah Tipe</h1>
         <nav aria-label="breadcrumb">
             <!-- <ol class="breadcrumb bg-transparent small p-0">
 				<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
@@ -25,21 +25,21 @@
                     </header>
                     <div class="card-body">
                         <div class="form-group mb-4">
-                            <label for="inputRightIcon">Name Type</label>
+                            <label for="inputRightIcon">Nama Tipe</label>
                             <span class="form-icon-wrapper">
                                 <span class="form-icon form-icon--right">
                                     <!-- <i class="fa fa-globe form-icon__item"></i> -->
                                 </span>
-                                <input id="" name="type" class="form-control form-icon-input-right" type="text" placeholder="Input Name	">
+                                <input id="" name="type" class="form-control form-icon-input-right" type="text" placeholder="Masukan Nama	">
                             </span>
                         </div>
                         <div class="form-group mb-4">
-                            <label for="inputRightIcon">jumlah slide</label>
+                            <label for="inputRightIcon">Jumlah Slide</label>
                             <span class="form-icon-wrapper">
                                 <span class="form-icon form-icon--right">
                                     <!-- <i class="fa fa-map-marker form-icon__item"></i> -->
                                 </span>
-                                <input id="jumlah" name="jumlah" class="form-control form-icon-input-right" type="text" placeholder="Jumlah Slide">
+                                <input id="jumlah" name="jumlah" class="form-control form-icon-input-right" type="text" placeholder="Masukan Jumlah Slide">
                             </span>
                         </div>
                         <div class="form-group mb-4">
@@ -48,7 +48,7 @@
                                 <span class="form-icon form-icon--right">
                                     <!-- <i class="fa fa-map-marker form-icon__item"></i> -->
                                 </span>
-                                <input id="harga" name="harga" class="form-control form-icon-input-right" type="text" placeholder="harga">
+                                <input id="harga" name="harga" class="form-control form-icon-input-right" type="text" placeholder="Masukan Harga">
                             </span>
                         </div>
                         <input class="btn btn-primary" type="submit" name="simpan" value="Simpan" style="margin-left: 920px;">

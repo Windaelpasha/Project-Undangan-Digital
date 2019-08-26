@@ -30,9 +30,6 @@
           <li class="nav-item active">
             <a class="nav-link navigasi" href="{{ route ('login')}}">Masuk</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link navigasi" href="{{ route ('register')}}">Daftar</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -47,7 +44,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form  action="{{url('/dashboard')}}" method="post">
+                <form  action="" method="post">
                      {{ csrf_field() }}
                     <div>
                         <label>Email</label>

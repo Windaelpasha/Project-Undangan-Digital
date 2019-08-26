@@ -19,7 +19,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault"> 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link navigasi" href="{{ url ('welcome')}}">Beranda</a>
@@ -29,9 +29,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link navigasi" href="{{ route ('login')}}">Masuk</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link navigasi" href="{{ route ('register')}}">Daftar</a>
           </li>
         </ul>
       </div>
