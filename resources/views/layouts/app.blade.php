@@ -8,28 +8,28 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Undangan Onlen</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
+    <div>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-dark" style="padding-top: 15px; transition-duration: 0.6s; box-shadow: 0 5px 12px -8px rgba(0, 0, 0,0.9); background-color: #3b556f; ">
+            <div class="">
+                <div class="">
 
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>  
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                    <a class="navbar-brand" href="{{ url('/') }}" style="color: #fff;">
+                        Undangan Pernikahan Digital
                     </a>
                 </div>
 
@@ -43,8 +43,10 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
+                            <li><a href="{{ url('welcome') }}" style="color: #fff;">Beranda</a></li>
+                            <li><a href="{{ url('demo') }}" style="color: #fff;">Demo</a></li>
+                            <li><a href="{{ route('login') }}" style="color: #fff;">Login</a></li>
+                            <li><a href="{{ route('register') }}" style="color: #fff;">Register</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

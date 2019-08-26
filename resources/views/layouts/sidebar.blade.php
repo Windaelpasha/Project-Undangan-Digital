@@ -17,6 +17,25 @@
 					</a>
 				</li>
 				<!-- End Dashboard -->
+				<li class="u-sidebar-nav-menu__item">
+					<a class="u-sidebar-nav-menu__link" href="#!" data-target="#subMenu4">
+						<i class="far fa-folder-open u-sidebar-nav-menu__item-icon"></i>
+						<span class="u-sidebar-nav-menu__item-title">Data Mitra</span>
+						<i class="fa fa-angle-right u-sidebar-nav-menu__item-arrow"></i>
+						<span class="u-sidebar-nav-menu__indicator"></span>
+					</a>
+
+					<ul id="subMenu4" class="u-sidebar-nav-menu u-sidebar-nav-menu--second-level" style="display: none;">
+						<li class="u-sidebar-nav-menu__item">
+							<a class="u-sidebar-nav-menu__link" href="{{route('undangan.mitra')}}">
+								<span class="u-sidebar-nav-menu__item-icon"></span>
+								<span class="u-sidebar-nav-menu__item-title">Mitra</span>
+							</a>
+						</li>
+					</ul>
+
+
+				</li>
 
 				<li class="u-sidebar-nav-menu__item">
 					<a class="u-sidebar-nav-menu__link" href="#!" data-target="#subMenu3">

@@ -29,7 +29,10 @@
             <a class="nav-link navigasi" href="{{ url ('demo')}}">Demo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navigasi" href="{{route ('login') }}">Masuk</a>
+            <a class="nav-link navigasi" href="{{route ('login')}}">Masuk</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link navigasi" href="{{route ('register')}}">Daftar</a>
           </li>
         </ul>
       </div>

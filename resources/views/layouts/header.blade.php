@@ -188,10 +188,15 @@
 											<span class="h3 mb-0"><i class="far fa-laugh-wink text-muted mr-3"></i></span> Anggota
 										</a>
 									</li>
-									<li>
-										<a class="d-flex align-items-center link-dark" href="#!">
-											<span class="h3 mb-0"><i class="far fa-share-square text-muted mr-3"></i></span> Keluar
-										</a>
+								<li>
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        	 {{ csrf_field() }}
 									</li>
 								</ul>
 							</div>

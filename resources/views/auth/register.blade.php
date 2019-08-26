@@ -1,95 +1,73 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="{{ asset('assets/img/icon.png')}}">
+@extends('layouts.app')
 
-    <title>Undangan Onlen | Daftar</title>
+@section('content')
+        <div class="col-md-8 col-md-offset-2">
+                <h4 class="_title" align="center">Daftar Akun</h4>
+              <p class="sub-title" align="center">Isi form di bawah ini dengan benar.</p>
 
-    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
-</head>
-<body>
-    <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top" style="padding-top: 15px; transition-duration: 0.6s; box-shadow: 0 5px 12px -8px rgba(0, 0, 0,0.9); background-color: #3b556f; ">
-      <a class="navbar-brand" href="#">Undangan Pernikahan Digital</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                <div class="panel-body">
+                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                        {{ csrf_field() }}
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault"> 
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link navigasi" href="{{ url ('welcome')}}">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navigasi" href="{{ url ('demo')}}">Demo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navigasi" href="{{ route ('login')}}">Masuk</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                            <label for="name" class="col-md-4 control-label">Name</label>
 
-      <div class="container" style="margin-top: 80px; margin-bottom: 50px;">
-        <!-- Example row of columns -->
-        <div class="row justify-content-center">
-          <div class="col-md-6 pt-4 pr-4 pb-4 pl-4">
-            <h4 class="_title" align="center">Daftar Akun</h4>
-            <p class="sub-title" align="center">Isi form di bawah ini dengan benar.</p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form  action="" method="post">
-                {{ csrf_field() }}
-                    <div>
-                        <label>Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="name" placeholder="Masukan nama anda">
-                    </div>
-                    <div>
-                        <label>Mitra</label>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="mitra" placeholder="Mitra anda">
-                    </div>
-                    <div>
-                        <label> Email</label>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="email" name="email" placeholder="Masukan alamat email">
-                    </div>
-                    <div>
-                        <label>Password</label>
-                    </div>
-              <div class="form-group">
-                <input class="form-control" type="password" name="password" placeholder="Masukan password">
-              </div>
-              <div>
-                <label>Confirm password</label>
-              </div>
-              <div class="form-group">
-                <input class="form-control" type="password" name="confirm password" placeholder="Ulangi password">
-              </div>
-                    <div class="form-group">
-                        <input class="btn btn-success btn-block btn-md" type="submit" name="" value="Masuk">
-                    </div>
-                </form>
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+
+                                @if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            <label for="password" class="col-md-4 control-label">Password</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-success">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-
-      </div> <!-- /container -->
-
-    <footer class="pt-4 pb-4 pl-4 pr-4 text-white" style="background: #3b556f;">
-      <p class="container">&copy; Undangan Digit 2019</p>
-    </footer>   
-
-    <script src="{{asset('js/jquery-slim.min.js')}}"></script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('js/popper.min.js')}}"></script>
-</html>
+@endsection

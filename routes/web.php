@@ -48,7 +48,6 @@ Route::get('auth/login','DemoController@login');
 Route::get('/welcome','DemoController@welcome');
 Route::post('auth/login','DemoController@admin');
 Route::post('/dashboard','AdminController@dashboard');
-Route::get('/dashboard','AdminController@dashboard');
 Auth::routes();
 
 // hapus pemesan
@@ -57,3 +56,10 @@ Auth::routes();
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+//mitra
+Route::get('/undangan/mitra','MitraController@mitra')->name('undangan.mitra');
