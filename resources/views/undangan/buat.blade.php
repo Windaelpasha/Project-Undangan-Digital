@@ -233,7 +233,7 @@
                             </div>
                         </div>
                         @endif
-                        <button type="submit" class="btn btn-primary" style="margin-left: 1000px; margin-top: 100px;">
+                        <button type="submit" class="btn btn-primary" style="margin-left: 800px; margin-top: 100px;">
                             <li class="fa">Simpan</li>
                         </button>
                         @endif

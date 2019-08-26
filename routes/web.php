@@ -62,3 +62,6 @@ Route::get('/pesananselesai', 'SelesaiController@pesananselesai')->name('pesanan
 Route::get('/report', 'ReportController@report')->name('report');
 
 Route::get('/hasil/{client_id}', 'HasilController@hasil')->name('hasil');
+
+//ip
+

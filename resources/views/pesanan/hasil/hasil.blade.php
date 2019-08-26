@@ -1,7 +1,12 @@
+
 @section('js')
+@if ( $retIp ==  'Show' )
+
+@elseif($retIp == 'Baru')
 <script type="text/javascript">
         $('#qrmodal').modal('show');
-</script>
+</script>    
+@endif
 @stop
 
 @extends('layouts.akhir')
@@ -414,7 +419,9 @@
                 </div>
             </div>
         </div>
+
         <!-- End Navbar -->
+        
 @endsection
        
 

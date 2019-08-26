@@ -16,7 +16,7 @@ class TypeTableSeed extends Seeder
         DB::table('type')->insert([
             'id' => '1',
             'nama_type' => 'test',
-            'jumlah_slide' => '20',
+            'jumlah_slide' => '4',
             'harga' => '20000',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -25,7 +25,7 @@ class TypeTableSeed extends Seeder
         DB::table('type')->insert([
             'id' => '2',
             'nama_type' => 'test 2',
-            'jumlah_slide' => '21',
+            'jumlah_slide' => '5',
             'harga' => '100000',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
@@ -34,7 +34,7 @@ class TypeTableSeed extends Seeder
         DB::table('type')->insert([
             'id' => '3',
             'nama_type' => 'test 3',
-            'jumlah_slide' => '7',
+            'jumlah_slide' => '6',
             'harga' => '10000',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
