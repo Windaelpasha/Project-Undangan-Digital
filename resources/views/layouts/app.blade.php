@@ -28,7 +28,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}" style="color: #fff;">
+                    <a class="navbar-brand" href="{{ url('/') }}" style="color: #ffc107;">
                         Undangan Pernikahan Digital
                     </a>
                 </div>
@@ -43,10 +43,10 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ url('welcome') }}" style="color: #fff;">Beranda</a></li>
-                            <li><a href="{{ url('demo') }}" style="color: #fff;">Demo</a></li>
-                            <li><a href="{{ route('login') }}" style="color: #fff;">Login</a></li>
-                            <li><a href="{{ route('register') }}" style="color: #fff;">Register</a></li>
+                            <li><a href="{{ url('welcome') }}" style="color: #ffc107;">Beranda</a></li>
+                            <li><a href="{{ url('demo') }}" style="color: #ffc107;">Demo</a></li>
+                            <li><a href="{{ route('login') }}" style="color: #ffc107;">Masuk</a></li>
+                            <li><a href="{{ route('register') }}" style="color: #ffc107;">Daftar</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

@@ -17,6 +17,7 @@
 					</a>
 				</li>
 				<!-- End Dashboard -->
+				@if(Auth::user()->status  == 'admin')
 				<li class="u-sidebar-nav-menu__item">
 					<a class="u-sidebar-nav-menu__link" href="#!" data-target="#subMenu4">
 						<i class="far fa-folder-open u-sidebar-nav-menu__item-icon"></i>
@@ -85,6 +86,21 @@
 						<span class="u-sidebar-nav-menu__item-title">Dokumentasi</span>
 					</a>
 				</li>
+				@else
+				<li class="u-sidebar-nav-menu__item">
+					<a class="u-sidebar-nav-menu__link" href="{{ route('undangan.pemesan') }}">
+						<i class="far fa-edit u-sidebar-nav-menu__item-icon"></i>
+						<span class="u-sidebar-nav-menu__item-title">Data Pemesan</span>
+					</a>
+				</li>
+
+				<li class="u-sidebar-nav-menu__item">
+					<a class="u-sidebar-nav-menu__link" href="./docs.html">
+						<i class="far fa-newspaper u-sidebar-nav-menu__item-icon"></i>
+						<span class="u-sidebar-nav-menu__item-title">Dokumentasi</span>
+					</a>
+				</li>
+				@endif
 				<!-- End Documentation -->
 			</ul>
 		</nav>

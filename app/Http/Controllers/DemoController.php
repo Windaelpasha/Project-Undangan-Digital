@@ -13,13 +13,7 @@ class DemoController extends Controller
         return view('/demo');
     }
     public function masuk(Request $request){
-    	$masuk = new User;
-    	$masuk ->name = $request->name;
-    	$masuk ->mitra = $request->mitra;
-    	$masuk ->email = $request->email;
-		$masuk ->password = $request->password;
-		$masuk->save();
-		 return redirect('auth/login');
+        return view('auth/register');
 
 
     }

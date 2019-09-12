@@ -147,7 +147,7 @@
 				  <a class="link-muted d-flex align-items-center" href="#!" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">
 				    <img class="u-avatar--xs img-fluid rounded-circle mr-2" src="/assets/img/avatars/img1.jpg" alt="User Profile">
 						<span class="text-dark d-none d-sm-inline-block">
-							Aku <small class="fa fa-angle-down text-muted ml-1"></small>
+							{{ Auth::user()->name }} <small class="fa fa-angle-down text-muted ml-1"></small>
 						</span>
 				  </a>
 
@@ -197,6 +197,7 @@
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         	 {{ csrf_field() }}
+                                        </form>
 									</li>
 								</ul>
 							</div>

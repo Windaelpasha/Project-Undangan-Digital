@@ -14,7 +14,7 @@ class PemesanController extends Controller
     public function pemesan()
     {
         $type = Type::all(); 
-        $data = Client::all();
+        $data = Client::where('status','0')->get();
         return view('undangan/pemesan',compact('type','data'));
     }
     public function create(Request $request)
@@ -40,5 +40,13 @@ class PemesanController extends Controller
             $type = Client::where('type_id', DB::type()->id)->get();
         }
         return view('undangan.pemesan', ['type_id'=>$type_id , 'type'=>$type]);
+    }
+
+    public function delete($id)
+    {
+        $client = Client::find($id);
+        $client->delete($client);
+        return redirect('undangan/pemesan');
+
     }
 }
