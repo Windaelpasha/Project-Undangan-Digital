@@ -1,0 +1,44 @@
+#background{
+  background-color:#6b15b6;
+  width:100%;
+  top:15%;
+  position:absolute;
+}
+.dropbox{
+  border: 1px dashed;
+  width:200px;
+  height:200px;
+  margin:auto;
+  margin-top:20px;
+  transform-style: preserve-3d;
+}
+.icon-container{
+  width:100px;
+  height:100px;
+  background-color:#6b15b6;
+  margin-left:50%;
+  margin-top:50%;
+  z-index:-90000000;
+}
+#probePreview{
+  height:inherit;
+  width:inherit;
+  z-index;90000;
+}
+img[src=""]{
+  display:none;
+}
+.fa-plus{
+  padding-left:30px;
+  padding-top:25px;
+}
+input[type=file]{
+  height:inherit;
+  width:100%;
+  position:absolute;
+  opacity:0;
+}
+.tilt-logo-inner {
+	transform: translateZ(50px) translateY(-50%) translateX(-50%);
+	position: absolute;
+}

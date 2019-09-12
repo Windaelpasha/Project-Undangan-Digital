@@ -40,7 +40,12 @@
                                 <span class="form-icon form-icon--right">
                                     <!-- <i class="fa fa-map-marker form-icon__item"></i> -->
                                 </span>
-                                <input id="jumlah" name="jumlah" class="form-control form-icon-input-right" type="text" value="{{$Typee->jumlah_slide}}" placeholder>
+                                <select name="jumlah" class="custom-select">
+                                    <option selected>{{$Typee->jumlah_slide}}</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
                             </span>
                         </div>
                         <div class="form-group mb-4">
@@ -52,7 +57,7 @@
                                 <input id="harga" name="harga" class="form-control form-icon-input-right" type="text" value="{{$Typee->harga}}" placeholder>
                             </span>
                         </div>
-                        <input class="btn btn-primary" type="submit" name="edit" value="edit" style="margin-left: 1100px;">
+                        <input class="btn btn-primary" type="submit" name="edit" value="edit">
                     </div>
                 </div>
             </div>

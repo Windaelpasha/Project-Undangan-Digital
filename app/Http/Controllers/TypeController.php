@@ -23,7 +23,7 @@ class TypeController extends Controller
     {
         $type = new Type;
         $type->nama_type = $request->type;
-        $type->jumlah_slide = $request->jumlah;
+        $type->jumlah_slide = $request->jumlah; 
         $type->harga = $request->harga;
 
         $type->save();

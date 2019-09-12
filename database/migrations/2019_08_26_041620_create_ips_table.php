@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMitraTable extends Migration
+class CreateIpsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,21 +13,16 @@ class CreateMitraTable extends Migration
      */
     public function up()
     {
-        Schema::create('mitra', function (Blueprint $table) {
+        Schema::create('ips', function (Blueprint $table) {
             $table->increments('id');
-            $table->UnsignedInteger('mitra_id');
-
+            $table->unsignedInteger('client_id');
             //foreign
-            $table->foreign('mitra_id')
+            $table->foreign('client_id')
                 ->references('id')
-                ->on('users')
+                ->on('client')
                 ->onDelete('cascade');
-            //mitra
-            $table->string('nama');
-            $table->string('email',191)->unique();
-            $table->string('password');
-            $table->string('status');
-            $table->rememberToken();
+            $table->string('ip');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
@@ -39,6 +34,6 @@ class CreateMitraTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mitra');
+        Schema::dropIfExists('ips');
     }
 }

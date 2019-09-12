@@ -19,7 +19,7 @@
             <div class="col-md-12 text-center">
                 <div class="card">
                     <header class="card-header" style="border: px solid #6b15b6;color: #6b15b6;">
-                        <h2 class="h3 card-header-title text-center">Tambah Data Tipe </h2>
+                        <h2 class="h3 card-header-title text-center"> Data Tipe </h2>
                     </header>
                     <table class="table table-hover">
                         <tr>
@@ -37,9 +37,9 @@
                             <td>{{$type->jumlah_slide}}</td>
                             <td>{{$type->harga}}</td>
                             <td>
-                                <a href="/crud_type/edit/{{$type->id}}"><button class="badge badge-success"><li class="fa fa-edit">Edit</li></button></a>
+                                <a href="/crud_type/edit/{{$type->id}}"><button class="btn btn-success"><li class="fa fa-edit">Edit</li></button></a>
                                 |
-                                <a href="/crud_type/delete/{{$type->id}}" onclick="return confirm('apakah anda yakin');"><button class="badge badge-danger" ><i class="fa fa-trash">Hapus</i></button></a>
+                                <a href="/crud_type/delete/{{$type->id}}" onclick="return confirm('apakah anda yakin');"><button class="btn btn-danger" ><i class="fa fa-trash">Hapus</i></button></a>
                             </td>
                         </tr>
                         <?php $i++; ?>
