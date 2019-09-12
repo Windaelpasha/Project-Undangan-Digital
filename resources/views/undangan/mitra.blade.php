@@ -31,7 +31,7 @@
                         @foreach ($data as $mitra) 
                         <tr>
                             <td>{{$i}}</td>
-                            <td>{{$mitra->nama}}</td>
+                            <td>{{$mitra->name}}</td>
                             <td><a href="/undangan/mitra/{{$mitra->id}}" class="btn btn-danger" onclick="return confirm('apakah anda yakin untuk menghapus data tersebut!!')"><i class="fa fa-trash">Hapus</i></a></td>
                         </tr>
                         <?php $i++; ?>

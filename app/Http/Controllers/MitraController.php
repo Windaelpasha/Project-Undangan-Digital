@@ -17,10 +17,9 @@ class MitraController extends Controller
 	{
 
 		$mtr = new Mitra;
-		$mtr->mitra_id = "1";
-		$mtr->nama =$request->nama;
+		$mtr->name =$request->nama;
 		$mtr->email =$request->email;
-		$mtr->password =$request->password;
+		$mtr->password =bcrypt($request->password);
 		$mtr->status =$request->status;
 		$mtr->save();
 

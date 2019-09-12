@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mitra extends Model
 {
-	protected $table = 'mitra';
+	protected $table = 'users';
     protected $fillable = [
     	'nama','email','password','status',
     ];
