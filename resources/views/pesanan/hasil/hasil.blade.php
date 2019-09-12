@@ -1,12 +1,18 @@
 
 @section('js')
-@if ( $retIp ==  'Show' )
+@if ( $retIp ==  'Close' )
 
 @elseif($retIp == 'Baru')
 <script type="text/javascript">
         $('#qrmodal').modal('show');
 </script>    
 @endif
+<script>
+    function modal()
+    {
+        $('#qrmodal').modal('hide');
+    }
+</script>
 @stop
 
 @extends('layouts.akhir')
@@ -238,7 +244,10 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak </button>
-                    <button type="button" class="btn btn-primary">Ya</button>
+                    <a href="@if (!empty($client_id) && !empty($thisIp)) {{route('pdf',['client_id' => $client_id,'ip' => $thisIp])}}
+                       @endif ">  
+                    <button type="button" class="btn btn-primary" onclick="modal()" >Ya</button>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -16,6 +16,8 @@
 						<span class="u-sidebar-nav-menu__item-title">Dashboard</span>
 					</a>
 				</li>
+				<hr style="border: 0; height: 3px; box-shadow: 0 3px 3px -3px blue inset;">
+
 				<!-- End Dashboard -->
 
 				<li class="u-sidebar-nav-menu__item">
@@ -35,6 +37,7 @@
 						</li>
 					</ul>
 				</li>
+				<hr style="border: 0; height: 3px; box-shadow: 0 3px 3px -3px blue inset;">
 
 				<!-- Forms -->
 				<li class="u-sidebar-nav-menu__item">
@@ -53,9 +56,7 @@
 					</a>
 				</li> -->
 				<!-- End Tables -->
-
-
-				<hr>
+				<hr style="border: 0; height: 3px; box-shadow: 0 3px 3px -3px blue inset;">
 
 				<!-- Documentation -->
 				<li class="u-sidebar-nav-menu__item">
@@ -64,6 +65,8 @@
 						<span class="u-sidebar-nav-menu__item-title">Dokumentasi</span>
 					</a>
 				</li>
+				<hr style="border: 0; height: 3px; box-shadow: 0 3px 3px -3px blue inset;">
+
 				<!-- End Documentation -->
 			</ul>
 		</nav>

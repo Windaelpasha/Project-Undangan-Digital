@@ -64,4 +64,8 @@ Route::get('/report', 'ReportController@report')->name('report');
 Route::get('/hasil/{client_id}', 'HasilController@hasil')->name('hasil');
 
 //ip
+Route::get('/konfirmasi/{client_id}/{ip}', 'HasilController@konfirmasi')->name('konfirmasi');
+Route::get('/konfirmasi/pdf/{client_id}/{ip}', 'HasilController@pdf')->name('pdf');
+
+
 

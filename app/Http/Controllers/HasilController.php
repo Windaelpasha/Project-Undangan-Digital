@@ -25,7 +25,7 @@ class HasilController extends Controller
     	$thisIp = $request->getClientip();
     	$ip = Ip::where([['ip',$thisIp],['client_id','=',$client_id]])->count();
     	if ($ip > 0) {
-    		$retIp='Show';
+    		$retIp='Close';
     		return view('pesanan.hasil.hasil',compact('data','type','retIp'));
     	}else {
     		$addr = new Ip ;
@@ -33,18 +33,18 @@ class HasilController extends Controller
     		$addr->client_id = $client_id;
     		$addr->save();
     		$retIp = 'Baru';
-        	return view('pesanan.hasil.hasil', compact('data','type','retIp'));
+        	return view('pesanan.hasil.hasil', compact('data','type','retIp','client_id','thisIp'));
     	}
 
     }
 
-    public function konfirmasi($ip,$client_id)
+    public function konfirmasi($client_id,$ip)
     {
-      //  $status = Ip::where('status','=','tolak')->get();
-        $ip = Ip::where([['ip','=',$ip],['client_id','=',$client_id],['status','=','tolak']])->count();
+       
+        $ip = Ip::where([['ip','=',$ip],['client_id','=',$client_id],['status','=','terima']])->count();
         if ($ip > 0  ) {
 
-            return view('undangan.konfirmasi', compact('ip'));
+            return view('undangan.confirm', compact('ip'));
 
         }else{
 
@@ -52,12 +52,14 @@ class HasilController extends Controller
         }
 
     }
-    public function pdf(Request $request)
+    public function pdf($client_id ,$ip)
     {
-        DB::table('ip')->where('id')->update(['status' => 'terima']);
-        $pdf = PDF::loadView('undangan.konfirmasi')
-                ->setPaper('a6','potrait')
-        ;  
+       $qr = Ip::where([['ip',$ip],['client_id',$client_id]])->first();
+       $qr->status = 'terima';
+       $qr->save();
+        
+        $pdf = PDF::loadView('undangan.konfirmasi',compact('client_id','ip'))
+                ->setPaper('a6','potrait');  
         return  $pdf->download('konfirmasi.pdf');
         // return view('undangan.konfirmasi');
     }

@@ -24,9 +24,10 @@
                     			<tr>
                     				<td>{{$dt->nama}}</td>
                     				<!-- <td></td> -->
-                    				<td><a href="/hasil/{{$dt->client_id}} " class="btn btn-info">Lihat</a>
+                    				<td><a href="/hasil/{{$dt->client_id}} " class="btn btn-info"><i class="far fa-eye"></i> Lihat</a>
                     					|
-                    					<a href="/undangan/data/{{$dt->id}}" class="btn btn-danger" onclick="return confirm('apakah anda yakin untuk menghapus data ini!!')">HAPUS</a>
+                    					<a href="/undangan/data/{{$dt->id}}" class="btn btn-danger" onclick="return confirm('apakah anda yakin untuk menghapus data ini!!')">
+                                        <i class="fa fa-trash"></i> HAPUS</a>
                     				</td>
                     			</tr>
          

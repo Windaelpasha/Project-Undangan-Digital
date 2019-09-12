@@ -22,6 +22,7 @@ class CreateIpsTable extends Migration
                 ->on('client')
                 ->onDelete('cascade');
             $table->string('ip');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

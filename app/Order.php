@@ -17,4 +17,8 @@ class Order extends Model
     {
         return $this->belongsTo(Client::class, 'client_id', 'id');
     }
+    public function ip()
+    {
+        return $this->hasMany(Ip::class, 'id', 'client_id');
+    }
 }
