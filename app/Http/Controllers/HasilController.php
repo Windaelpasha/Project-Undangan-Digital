@@ -8,7 +8,7 @@ use App\Client;
 use App\Type ;
 use Illuminate\Support\Facades\DB;
 use App\Ip;
-use Barryvdh\DomPDF\Facade as PDF;
+// use Barryvdh\DomPDF\Facade as PDF;
 use PDF;
 class HasilController extends Controller
 {

@@ -18,28 +18,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::group(['middleware' => 'revalidate','role:admin'], function(){
-	
 Route::get('/demo','DemoController@demo');
+Route::get('/welcome','DemoController@welcome');
+
+Route::group(['middleware' => ['role:admin','auth']], function(){
+	
 Route::post('/auth/register','DemoController@masuk')->name('register');
 Route::post('/register','DemoController@masuk');
 Route::get('auth/login','DemoController@login')->name('login');
-Route::get('/welcome','DemoController@welcome');
 Route::post('auth/login','DemoController@admin');
 Route::post('/dashboard','AdminController@dashboard');
-Auth::routes();
 
 // hapus pemesan
 // Route::get('/undangan/buat', 'PemesanController@masuk');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 //mitra
 Route::get('/undangan/mitra','MitraController@mitra')->name('undangan.mitra');
@@ -77,13 +69,10 @@ Route::get('undangan/data/{id}','DataController@delete')->name('data.delete');
 
 //output
 
-Auth::routes();
 
 Route::get('/landing', 'LandingController@landing')->name('landing');
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/dashboard', 'DashboardController@dashboard')->name('dashboard');
 
 Route::get('/buatpesanan', 'BaruController@buatPesanan')->name('buatpesanan');
 
@@ -96,11 +85,12 @@ Route::get('/hasil/{client_id}', 'HasilController@hasil')->name('hasil');
 //ip
 Route::get('/konfirmasi/{client_id}/{ip}', 'HasilController@konfirmasi')->name('konfirmasi');
 Route::get('/konfirmasi/pdf/{client_id}/{ip}', 'HasilController@pdf')->name('pdf');
+});
+Auth::routes();
 
 
 
 
 	
-});
 
 

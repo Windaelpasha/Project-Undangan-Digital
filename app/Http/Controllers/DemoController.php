@@ -12,14 +12,6 @@ class DemoController extends Controller
     {
         return view('/demo');
     }
-    public function masuk(Request $request){
-        return view('auth/register');
-
-
-    }
-     public function login()
-    {
-        return view('auth/login');
     }
     public function welcome()
     {

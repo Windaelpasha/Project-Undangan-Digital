@@ -27,7 +27,7 @@
                     <h3 class="panel-title">Undangan Digital</h3>
                 </div>
                         
-                <h4 class="_title" align="center" >Masuk Sebagai Admin</h4>
+                <h4 class="_title" align="center" >Masuk Sebagai Admin Atau MItra</h4>
             <p class="sub-title" align="center" >Masukan Email dan kata sandi pada form di bawah.</p>
 
                 <div class="panel-body">

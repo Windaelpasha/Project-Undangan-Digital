@@ -63,7 +63,6 @@
                         <label class="col-md-4 control-label">Status</label>
                             <div class="col-md-6">
                                 <select name="status" class="form-control">
-                                    <option></option>
                                     <option value="mitra">mitra</option>
                                 </select>
                             </div>
