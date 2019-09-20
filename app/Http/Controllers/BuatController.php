@@ -79,5 +79,4 @@ class BuatController extends Controller
                 
         return redirect('undangan/data');
     }
-
 }
