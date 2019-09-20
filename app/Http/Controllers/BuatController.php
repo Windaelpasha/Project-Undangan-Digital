@@ -60,25 +60,23 @@ class BuatController extends Controller
         $or->gambar6 = $namaFile6;
             
         }
-
-
-        
-
+    if ($request->hasfile('background')) {
+        $file7 = $request->file('background');
+        $namaFile7 = $file7->getClientOriginalName();
+        $file7->move("img/",$namaFile7);
+        $or->background = $namaFile7;
+            
+        }
 
         //slide
-        $or->slide1 = $request->slide1;
-        $or->slide2 = $request->slide2;
-        $or->slide3 = $request->slide3;
-        $or->slide4 = $request->slide4;
-        $or->slide5 = $request->slide5;
-        $or->slide6 = $request->slide6;
-
 
         $or->save();
 
         $client = Client::find($id);
         $client->status = 1;
-        $client->save();        
+        $client->save();
+
+                
         return redirect('undangan/data');
     }
 

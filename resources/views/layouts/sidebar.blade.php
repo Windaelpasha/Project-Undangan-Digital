@@ -2,8 +2,8 @@
 <aside id="sidebar" class="u-sidebar" style="box-shadow: 5px 5px 5px 5px lightgrey">
 	<div class="u-sidebar-inner" style="box-shadow: 2px 2px 2px 2px lightgrey">
 		<header class="u-sidebar-header">
-			<a class="u-sidebar-logo" href="index.html">
-				<img class="img-fluid" src="./assets/img/logo.png" width="124" alt="Stream Dashboard">
+			<a class="u-sidebar-logo" href="#">
+				<img class="img-fluid" src="/assets/img/digital.png" width="124" alt="Stream Dashboard">
 			</a>
 		</header>
 

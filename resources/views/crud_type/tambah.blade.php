@@ -34,13 +34,13 @@
                             </span>
                         </div>
                         <div class="form-group mb-4">
-                            <label for="inputRightIcon">Jumlah Slide</label>
+                            <label for="inputRightIcon">Jumlah Halaman</label>
                             <span class="form-icon-wrapper">
                                 <span class="form-icon form-icon--right">
                                     <!-- <i class="fa fa-map-marker form-icon__item"></i> -->
                                 </span>
                                 <select name="jumlah" class="custom-select">
-                                    <option selected>Pilih Jumlah Slide</option>
+                                    <option selected>Pilih Jumlah Halaman</option>
                                     <option>4</option>
                                     <option>5</option>
                                     <option>6</option>

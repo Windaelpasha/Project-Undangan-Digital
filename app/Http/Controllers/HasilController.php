@@ -59,7 +59,7 @@ class HasilController extends Controller
        $qr->save();
         
         $pdf = PDF::loadView('undangan.konfirmasi',compact('client_id','ip'))
-                ->setPaper('a6','potrait');  
+                ->setPaper('a6','landscape');  
         return  $pdf->download('konfirmasi.pdf');
         // return view('undangan.konfirmasi');
     }

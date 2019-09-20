@@ -25,9 +25,26 @@
 
 		<!-- Theme Styles -->
 		<link rel="stylesheet" href="/assets/css/theme.css">
+		<link ... href="http://sstatic.net/stackoverflow/all.css?v=c298c7f8233d">
 
-		<!-- Custom Charts -->
+		<!-- Custom Charts --><!--  -->
 		<style>
+			/**{
+            margin:0; 
+            padding:0;
+        }
+*/
+        body {
+            /*overflow: hidden;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+            background-position: center center;
+            background-repeat: no-repeat ;
+            height: 100%;
+            margin: 0;
+            user-select: none;
+            -webkit-tap-highlight-color:transparent;*/
+        }
 			.js-doughnut-chart {
 				width: 70px !important;
 				height: 70px !important;
@@ -60,6 +77,11 @@
 		<script src="/assets/js/dashboard-page-scripts.js"></script>
 		<script src="/assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
 		<script src="/assets/vendor/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js?v=1.0"></script> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js?v=1.1"></script> -->
+   		<script src="{{ asset('assets/css/master.css/js/turn.min.js?v=1.0') }}" type="text/javascript"></script>
+   		<script src="{{ asset('assets/css/master.css/js/turn.min.js?v=1.1') }}" type="javascript/text"></script>
+          
 		@section('js')
 
 		@show

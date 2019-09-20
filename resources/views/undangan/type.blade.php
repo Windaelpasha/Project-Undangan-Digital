@@ -25,7 +25,7 @@
                         <tr>
                             <th>No</th>
                             <th>Tipe</th>
-                            <th> Jumlah Slide</th>
+                            <th> Jumlah Halaman</th>
                             <th> Harga</th>
                             <th>Aksi</th>
                         </tr>

@@ -1,9 +1,9 @@
 <!-- Header (Topbar) -->
 <header class="u-header"  style="box-shadow: 1px 1px 1px 1px lightgrey">
 			<div class="u-header-left">
-				<a class="u-header-logo" href="index.html">
-					<img class="u-logo-desktop" src="/assets/img/logo.png" width="160" alt="Stream Dashboard">
-					<img class="img-fluid u-logo-mobile" src="/assets/img/logo-mobile.png" width="50" alt="Stream Dashboard">
+				<a class="u-header-logo" href="#">
+					<img class="u-logo-desktop" src="/assets/img/digital.png" width="160" alt="Stream Dashboard">
+					<img class="img-fluid u-logo-mobile" src="/assets/img/digital1.png" width="50" alt="Stream Dashboard">
 				</a>
 			</div>
 
@@ -25,10 +25,10 @@
 					<div id="headerSearch" class="u-header-search-form">
 						<form>
 							<div class="input-group">
-								<button class="btn-link input-group-prepend u-header-search__btn" type="submit">
+								<!-- <button class="btn-link input-group-prepend u-header-search__btn" type="submit">
 									<i class="fa fa-search"></i>
-								</button>
-								<input class="form-control u-header-search__field" type="search" placeholder="Ketik pencarian">
+								</button> -->
+								<!-- <input class="form-control u-header-search__field" type="search" placeholder="Ketik pencarian"> -->
 							</div>
 						</form>
 					</div>

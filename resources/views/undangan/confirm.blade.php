@@ -41,7 +41,6 @@ body {
   <div class="hero-text">
     <h1 style="font-size:50px">Konfirmasi Berhasil</h1>
     <h3 style="font-size: 30px">Anda Di Perbolehkan Masuk</h3>
-    <!-- <button>Hire me</button> -->
   </div>
 </div>
 

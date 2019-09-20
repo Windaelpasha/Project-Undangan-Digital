@@ -29,13 +29,7 @@ class CreateOrderTable extends Migration
             $table->string('gambar5')->nullable();
             $table->string('gambar6')->nullable();
             //slide
-            $table->string('slide1')->nullable(); 
-            $table->string('slide2')->nullable(); 
-            $table->string('slide3')->nullable(); 
-            $table->string('slide4')->nullable(); 
-            $table->string('slide5')->nullable(); 
-            $table->string('slide6')->nullable(); 
-
+            $table->string('background')->nullable(); 
 
             $table->timestamps();
         });
