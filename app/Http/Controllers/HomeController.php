@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Order;
+use App\Client;
+use App\Type ;
 
 class HomeController extends Controller
 {
@@ -23,6 +26,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+    $belum = Client::where('status','=','0')->count();
+    $sudah = Client::where('status','=','1')->count();
+    $total = Client::all()->count();
+      return view('dashboard',compact('belum','sudah','total'));
     }
 }

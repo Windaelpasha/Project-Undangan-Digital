@@ -27,14 +27,13 @@
                             <th>Nama Mitra</th>
                             <th>Aksi</th>
                         </tr>
-                        <?php $i= 1; ?>
-                        @foreach ($data as $mitra) 
+                        
+                        @foreach ($user as $key => $mitra) 
                         <tr>
-                            <td>{{$i}}</td>
+                            <td>{{$key+1}}</td>
                             <td>{{$mitra->name}}</td>
                             <td><a href="/undangan/mitra/{{$mitra->id}}" class="btn btn-danger" onclick="return confirm('apakah anda yakin untuk menghapus data tersebut!!')"><i class="fa fa-trash">Hapus</i></a></td>
                         </tr>
-                        <?php $i++; ?>
                         @endforeach
                     </table>
                 </div>

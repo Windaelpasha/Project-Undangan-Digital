@@ -12,7 +12,6 @@ class TypeTableSeed extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
         DB::table('type')->insert([
             'id' => '1',
             'nama_type' => 'test',

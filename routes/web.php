@@ -21,13 +21,13 @@ Route::get('/', function () {
 Route::get('/demo','DemoController@demo');
 Route::get('/welcome','DemoController@welcome');
 
-Route::group(['middleware' => ['role:admin','auth']], function(){
+// Route::group(['middleware' => ['role:admin','auth']], function(){
 	
 Route::post('/auth/register','DemoController@masuk')->name('register');
 Route::post('/register','DemoController@masuk');
 Route::get('auth/login','DemoController@login')->name('login');
 Route::post('auth/login','DemoController@admin');
-Route::post('/dashboard','AdminController@dashboard');
+// Route::post('/dashboard','AdminController@dashboard');
 
 // hapus pemesan
 // Route::get('/undangan/buat', 'PemesanController@masuk');
@@ -37,7 +37,7 @@ Route::post('/dashboard','AdminController@dashboard');
 Route::get('/undangan/mitra','MitraController@mitra')->name('undangan.mitra');
 Route::get('/auth/akun','MitraController@regis');
 Route::post('/auth/akun','MitraController@create');
-Route::get('/undangan/mitra','MitraController@show')->name('undangan.mitra');
+Route::get('/undangan/mitra/lihat','MitraController@show')->name('undangan.lihat');
 Route::get('/undangan/mitra/{id}','MitraController@delete');
  //logout
 Route::get('/dashboard', 'AdminController@dashboard');
@@ -85,7 +85,7 @@ Route::get('/hasil/{client_id}', 'HasilController@hasil')->name('hasil');
 //ip
 Route::get('/konfirmasi/{client_id}/{ip}', 'HasilController@konfirmasi')->name('konfirmasi');
 Route::get('/konfirmasi/pdf/{client_id}/{ip}', 'HasilController@pdf')->name('pdf');
-});
+// });
 Auth::routes();
 
 

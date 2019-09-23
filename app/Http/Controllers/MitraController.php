@@ -10,7 +10,7 @@ class MitraController extends Controller
 {
 	public function mitra()
 	{
-		$user = User::all();
+		$user = User::where('status','mitra')->get();
 		return view('undangan.mitra',compact('user'));
 	}
 	public function create(Request $request)
