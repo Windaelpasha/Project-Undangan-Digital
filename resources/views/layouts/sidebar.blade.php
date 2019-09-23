@@ -86,6 +86,8 @@
 						<span class="u-sidebar-nav-menu__item-title">Dokumentasi</span>
 					</a>
 				</li>
+				<hr style="border: 0; height: 3px; box-shadow: 0 3px 3px -3px blue inset;">
+
 				@else
 				<li class="u-sidebar-nav-menu__item">
 					<a class="u-sidebar-nav-menu__link" href="{{ route('undangan.pemesan') }}">
@@ -95,7 +97,7 @@
 				</li>
 					<hr style="border: 0; height: 3px; box-shadow: 0 3px 3px -3px blue inset;">
 				<li class="u-sidebar-nav-menu__item">
-					<a class="u-sidebar-nav-menu__link" href="./docs.html">
+					<a class="u-sidebar-nav-menu__link" href="{{route('data.undangan')}}">
 						<i class="far fa-newspaper u-sidebar-nav-menu__item-icon"></i>
 						<span class="u-sidebar-nav-menu__item-title">Dokumentasi</span>
 					</a>

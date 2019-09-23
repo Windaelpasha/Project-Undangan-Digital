@@ -12,9 +12,9 @@ use App\Ip;
 use PDF;
 class HasilController extends Controller
 {
-    public function hasil(Request $request ,$client_id)
+    public function hasil(Request $request ,$clients_id)
     {
-
+        $client_id = decrypt($clients_id);
     	$type = Type::all();
     	$data = DB::table('client')
     		    ->join('order','client.id','=','order.client_id')
