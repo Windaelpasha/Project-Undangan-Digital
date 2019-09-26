@@ -59,6 +59,37 @@
                                 <input id="harga" name="password" class="form-control form-icon-input-right" type="password" placeholder="Konfirmasi Password">
                             </span>
                         </div>
+                        <div class="form-group mb-4">
+                            <label for="inputRightIcon"Konfirmasi> Kota</label>
+                            <span class="form-icon-wrapper">
+                                <span class="form-icon form-icon--right">
+                                    <!-- <i class="fa fa-map-marker form-icon__item"></i> -->
+                                </span>
+                                <input id="harga" name="kota" class="form-control form-icon-input-right" type="text" placeholder="Kota">
+                            </span>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="inputRightIcon"Konfirmasi> No_hp</label>
+                            <span class="form-icon-wrapper">
+                                <span class="form-icon form-icon--right">
+                                    <!-- <i class="fa fa-map-marker form-icon__item"></i> -->
+                                </span>
+                                <input id="harga" name="no" class="form-control form-icon-input-right" type="text" placeholder="no_hp">
+                            </span>
+                        </div>
+                   <div class="form-group mb-4">
+                            <label for="inputRightIcon"Konfirmasi> Jenis Kelamin</label>
+                            <span class="form-icon-wrapper">
+                                <span class="form-icon form-icon--right">
+                                    <!-- <i class="fa fa-map-marker form-icon__item"></i> -->
+                                </span>
+                                <select name="Jenis_kelamin" class="form-control">
+                                    <option value="mitra">Laki-laki</option>
+                                    <option value="mitra">perempuan</option>
+                                </select>
+
+                            </span>
+                        </div>
 
                         <label class="col-md-4 control-label">Status</label>
                             <div class="col-md-6">

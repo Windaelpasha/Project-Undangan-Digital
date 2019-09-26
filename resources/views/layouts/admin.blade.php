@@ -13,7 +13,7 @@
 		<meta name="author" content="htmlstream.com">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/assets/img/digital1.png" type="image/x-icon">
 
 		<!-- Web Fonts -->
 		<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">

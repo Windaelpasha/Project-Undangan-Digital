@@ -49,6 +49,8 @@ Route::post('/undangan/pemesan/create', 'PemesanController@create')->name('undan
 Route::post('/undangan/pemesan/tampil', 'PemesanController@tampil');
 Route::post('/undangan/pemesan/{id}', 'PemesanController@type');
 Route::get('/undangan/pemesan/{id}', 'PemesanController@delete');
+// pemesan untuk mitra
+
 //type tambah
 Route::get('/undangan/type', 'TypeController@tipe')->name('undangan.type');
 Route::get('/undangan/type/hasil', 'TypeController@hasil');
@@ -63,6 +65,16 @@ Route::get('crud_type/delete/{id}', 'TypeController@delete');
 // buat order
 Route::post('undangan/buat/create/{id}', 'BuatController@create')->name('buat.create');
 Route::get('undangan/buat/{id}', 'BuatController@buat');
+// client mitra
+// Route::get('/undangan/client/konfirmasi', 'PemesanController@ok');
+// Route::post('/undangan/pemesan/tampil', 'PemesanController@tampil');
+// Route::post('/undangan/pemesan/{id}', 'PemesanController@type');
+Route::get('/undangan/client', 'ClientmitraController@index')->name('client.index');
+Route::post('/undangan/client/create', 'ClientmitraController@create')->name('client.create');
+Route::get('/undangan/client/{id}', 'PemesanController@store');
+// buat ordermitra
+Route::post('undangan/ordermitra/create/{id}', 'BuatController@create')->name('ordermitra.create');
+Route::get('undangan/ordermitra/{id}', 'BuatController@index');
 // data
 Route::get('undangan/data', 'DataController@data')->name('data.undangan');
 Route::get('undangan/data/{id}','DataController@delete')->name('data.delete');
@@ -86,6 +98,7 @@ Route::get('/hasil/{client_id}', 'HasilController@hasil')->name('hasil');
 Route::get('/konfirmasi/{client_id}/{ip}', 'HasilController@konfirmasi')->name('konfirmasi');
 Route::get('/konfirmasi/pdf/{client_id}/{ip}', 'HasilController@pdf')->name('pdf');
 // });
+// 
 Auth::routes();
 
 

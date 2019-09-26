@@ -69,6 +69,16 @@
                                 </select>
                             </div>
                         </div>
+                    <div class="form-group{{$errors->has('status') ? 'has-error':''}}">
+                            <label class="col-md-4 control-label">Status</label>
+                            <div class="col-md-6">
+                                <select name="status" class="form-control">
+                                    <option></option>
+                                    <option value="admin">admin</option>
+                                    <option value="mitra">mitra</option>
+                                </select>
+                            </div>
+                        </div>
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">

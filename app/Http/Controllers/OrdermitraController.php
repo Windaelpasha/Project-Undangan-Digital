@@ -2,23 +2,38 @@
 
 namespace App\Http\Controllers;
 
+use App\Ordermitra;
+use App\Clientmitra;
+use Illuminate\Http\Request;
 use App\Order;
 use App\Client;
 use App\Type ;
 use Illuminate\Http\Request;
 use DB;
-class BuatController extends Controller
+
+class OrdermitraController extends Controller
 {
-    public function buat($id)
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index($id)
     {
         $type = Type::all();
-        $client = Client::find($id);
-        $order = Order::find($id);
+        $client = Clientmitra::find($id);
+        $order = Ordermitra::find($id);
         return view('undangan/buat', compact('order','client','type'));
     }
-    public function create(Request $request ,$id)
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
     {
-        $or = new Order;
+          $or = new Ordermitra;
         $or->client_id = $request->id;
         // desain
        
@@ -72,9 +87,65 @@ class BuatController extends Controller
 
         $or->save();
 
-        $client = Client::find($id);
+        $client = Clientmitra::find($id);
         $client->status = 1;
         $client->save();             
         return redirect('undangan/data');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Ordermitra  $ordermitra
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Ordermitra $ordermitra)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Ordermitra  $ordermitra
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Ordermitra $ordermitra)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Ordermitra  $ordermitra
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Ordermitra $ordermitra)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Ordermitra  $ordermitra
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Ordermitra $ordermitra)
+    {
+        //
     }
 }

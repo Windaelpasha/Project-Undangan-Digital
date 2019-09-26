@@ -11,7 +11,7 @@
 			<ul class="u-sidebar-nav-menu u-sidebar-nav-menu--top-level">
 				<!-- Dashboard -->
 				<li class="u-sidebar-nav-menu__item">
-					<a class="u-sidebar-nav-menu__link active" href="/dashboard">
+					<a class="u-sidebar-nav-menu__link active" href="/home">
 						<i class="fa fa-cubes u-sidebar-nav-menu__item-icon"></i>
 						<span class="u-sidebar-nav-menu__item-title">Dashboard</span>
 					</a>

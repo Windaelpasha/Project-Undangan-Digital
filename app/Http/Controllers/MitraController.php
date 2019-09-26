@@ -21,6 +21,9 @@ class MitraController extends Controller
 		$mtr->email =$request->email;
 		$mtr->password =bcrypt($request->password);
 		$mtr->status =$request->status;
+		$mr->jenis_kelamin = $request->jenis_kelamin;
+		$mr->kota = $request->kota;
+		$no_hp = $request->no;
 		$mtr->save();
 
 		return redirect('undangan/mitra');
